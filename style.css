@@ -15,31 +15,30 @@ canvas {
 }
 
 #undoButton,
-#clearButton {
-	background-color: #fff;
-	border: 1px solid #000;
-	width: 150px;
-	height: 20px;
-	text-align: center;
-}
-
-#undoButton,
 #colorPalette,
 #clearButton {
-	position: relative;
-	top: -600px;
+	position: fixed;
+	top: 180px;
 	left: 10px;
+	background-color: #fff;
+	border: 1px solid #000;
 	cursor: pointer;
 	user-select: none;
 }
 
 #clearButton {
-	top: -595px!important;
+	top: 205px!important;
+}
+
+#undoButton,
+#clearButton {
+	width: 150px;
+	height: 20px;
+	text-align: center;
 }
 
 #colorPalette {
-	top: -590px;
-	width: fit-content;
+	top: 230px;
 	display: flex;
 	flex-direction: row;
 	background: none;
@@ -155,17 +154,16 @@ form {
 
 @media screen and (max-width: 736px) {
 	.jatekosNagy {
-		max-width: 150px;
-		max-height: 120px;
+		max-width: 100px;
+		max-height: 100px;
 		width: 100%;
 		height: 100%;
-		margin: 0 50px 30px 50px;
 	}
 
 	.jatekos {
-		max-width: 150px;
-		width: 100%;
-		height: 100%;
+		max-width: 100px;
+		width: 80%;
+		height: 80%;
 		font-size: 5vw;
 	}
 
@@ -173,17 +171,26 @@ form {
 		margin: 0 auto;
 		width: 30%;
 		font-size: 1.5vw;
-		border-radius: 10px;
 	}
 
-	.jatekosok {
-		width: 100%;
-		margin: auto;
-	}
+	#undoButton,
+#colorPalette,
+#clearButton {
+	position: relative;
+	bottom: -600px;
+	left: 10px;
+	background-color: #fff;
+	border: 1px solid #000;
+	cursor: pointer;
+	user-select: none;
+}
 
-	body {
-		
-		background-repeat: repeat;
-	}
+#clearButton {
+	top: 205px!important;
+}
+
+#colorPalette {
+	top: 230px;
+}
 
 }
