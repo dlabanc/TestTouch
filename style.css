@@ -5,13 +5,14 @@ body {
 	text-transform: uppercase;
 	background-image: url("extrem_activity_rgb.jpg");
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: 150%;
 }
 
 canvas {
 	display: block;
 	cursor: crosshair;
+	position: absolute;
 }
 
 #undoButton,
@@ -27,18 +28,18 @@ canvas {
 #colorPalette,
 #clearButton {
 	position: relative;
-	top: -700px;
+	top: 0px;
 	left: 10px;
 	cursor: pointer;
 	user-select: none;
 }
 
 #clearButton {
-	top: -695px!important;
+	top: 10px!important;
 }
 
 #colorPalette {
-	top: -690px;
+	top: 20px;
 	width: fit-content;
 	display: flex;
 	flex-direction: row;
@@ -100,7 +101,7 @@ canvas {
 	text-align: center;
 	margin-top: 0.2rem;
 	margin-bottom: 0rem;
-	font-size: 6vw;
+	font-size: 5.6vw;
 	font-weight: bolder;
 }
 
@@ -142,6 +143,7 @@ form {
 	font-size: 2.5rem;
 	text-align: center;
 	padding: 10px 0 10px 0;
+	margin-top: 20px;
 }
 
 .removeAllP {
@@ -171,8 +173,8 @@ form {
 
 	#jatekosNev {
 		margin: 0 auto;
-		width: 30%;
-		font-size: 1.5vw;
+		width: 40%;
+		font-size: 2vw;
 		border-radius: 10px;
 	}
 

@@ -218,6 +218,11 @@ function draw(e) {
 	ctx.stroke();
 	ctx.beginPath();
 	ctx.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
+
+	/*ctx.lineTo(e.clientX - 8, e.clientY - 173);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(e.clientX - 8, e.clientY - 173);*/
 }
 
 function startDrawing2(e) {
