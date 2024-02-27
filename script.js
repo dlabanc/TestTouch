@@ -214,10 +214,10 @@ function draw(e) {
 	ctx.lineCap = "round";
 	ctx.strokeStyle = cursorColor;
 
-	ctx.lineTo(e.clientX - 8, e.clientY - 173);
+	ctx.lineTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
 	ctx.stroke();
 	ctx.beginPath();
-	ctx.moveTo(e.clientX - 8, e.clientY - 173);
+	ctx.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
 }
 
 function startDrawing2(e) {

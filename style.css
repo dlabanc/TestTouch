@@ -6,7 +6,7 @@ body {
 	background-image: url("extrem_activity_rgb.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 2500px;
+	background-size: 150%;
 }
 
 canvas {
@@ -15,30 +15,31 @@ canvas {
 }
 
 #undoButton,
-#colorPalette,
 #clearButton {
-	position: fixed;
-	top: 180px;
-	left: 10px;
 	background-color: #fff;
 	border: 1px solid #000;
-	cursor: pointer;
-	user-select: none;
-}
-
-#clearButton {
-	top: 205px;
-}
-
-#undoButton,
-#clearButton {
 	width: 150px;
 	height: 20px;
 	text-align: center;
 }
 
+#undoButton,
+#colorPalette,
+#clearButton {
+	position: relative;
+	top: -700px;
+	left: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+#clearButton {
+	top: -695px!important;
+}
+
 #colorPalette {
-	top: 230px;
+	top: -690px;
+	width: fit-content;
 	display: flex;
 	flex-direction: row;
 	background: none;
@@ -61,7 +62,8 @@ canvas {
 .jatekosNagy {
 	text-align: center;
 	margin: 10px;
-	width: 340px;
+	width: 100%;
+	max-width: 340px;
     color:white;
 }
 
@@ -74,16 +76,20 @@ canvas {
 	height: 130px;
 	background-color: rgba(255, 255, 255, 0.881);
 	border: 3px solid rgb(255, 255, 255);
+	user-select: none;
+	cursor: pointer;
+	color: rgb(185, 0, 0);
+	font-size: 6.5rem;
 }
 
 .timer {
 	cursor: pointer;
-	font-size: 1.5rem;
 	margin-top: 0.5rem !important;
 	border-radius: 1rem;
 	margin: auto;
 	width: 99%;
-	height: 130px;
+	height: 100%;
+	max-height: 130px;
 	background-color: rgba(255, 255, 255, 0.881);
 	border: 3px solid rgb(255, 255, 255);
 	letter-spacing: 0.5em;
@@ -94,7 +100,7 @@ canvas {
 	text-align: center;
 	margin-top: 0.2rem;
 	margin-bottom: 0rem;
-	font-size: 6.5rem;
+	font-size: 6vw;
 	font-weight: bolder;
 }
 
@@ -102,16 +108,8 @@ canvas {
 	font-weight: bolder;
 	user-select: none;
 	text-align: center;
-	font-size: 1.5rem;
-	height: 30px;
+	font-size: 2vw;
 	margin-bottom: 0px;
-}
-
-.jatekos {
-	user-select: none;
-	cursor: pointer;
-	color: rgb(185, 0, 0);
-	font-size: 7rem;
 }
 
 .buttons {
@@ -139,25 +137,11 @@ form {
 }
 
 #jatekosNev {
-	height: 50px;
+	max-height: 50px;
 	border-radius: 15px;
 	font-size: 2.5rem;
 	text-align: center;
 	padding: 10px 0 10px 0;
-}
-
-.ujJatekosGomb {
-	border: none;
-	background: none;
-	font-size: 2rem;
-	cursor: pointer;
-	width: fit-content;
-	margin: auto;
-	margin-top: 10px;
-}
-.ujJatekosGomb:hover {
-	color: rgb(137, 0, 0);
-	font-weight: bold;
 }
 
 .removeAllP {
@@ -167,4 +151,39 @@ form {
 	border: 1px solid #000;
 	cursor: pointer;
 	user-select: none;
+}
+
+@media screen and (max-width: 736px) {
+	.jatekosNagy {
+		max-width: 150px;
+		max-height: 120px;
+		width: 100%;
+		height: 100%;
+		margin: 0 50px 30px 50px;
+	}
+
+	.jatekos {
+		max-width: 150px;
+		width: 100%;
+		height: 100%;
+		font-size: 5vw;
+	}
+
+	#jatekosNev {
+		margin: 0 auto;
+		width: 30%;
+		font-size: 1.5vw;
+		border-radius: 10px;
+	}
+
+	.jatekosok {
+		width: 100%;
+		margin: auto;
+	}
+
+	body {
+		
+		background-repeat: repeat;
+	}
+
 }
