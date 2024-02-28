@@ -10,9 +10,9 @@ body {
 }
 
 canvas {
-	display: block;
 	cursor: crosshair;
 	position: absolute;
+	left: 50px;
 }
 
 #undoButton,
@@ -29,7 +29,7 @@ canvas {
 #clearButton {
 	position: relative;
 	top: 0px;
-	left: 10px;
+	left: 50px;
 	cursor: pointer;
 	user-select: none;
 }
