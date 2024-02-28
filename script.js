@@ -5,8 +5,6 @@ const clearButton = document.querySelector("#clearButton");
 const colorPalette = document.querySelector("#colorPalette");
 let undoHistory = [];
 
-document.querySelector(".timer p").style.color = "rgb(185, 120, 50)";
-
 const SECONDS = 90;
 
 const playersDiv = document.querySelector(".players");
