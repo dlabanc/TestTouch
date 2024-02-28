@@ -5,6 +5,8 @@ const clearButton = document.querySelector("#clearButton");
 const colorPalette = document.querySelector("#colorPalette");
 let undoHistory = [];
 
+document.querySelector(".timer p").style.color = "rgb(185, 120, 50)";
+
 const SECONDS = 90;
 
 const playersDiv = document.querySelector(".players");
@@ -197,6 +199,7 @@ let drawing = false;
 let cursorColor = "#000";
 
 function startDrawing(e) {
+	e.preventDefault();
 	drawing = true;
 	draw(e);
 }
@@ -209,7 +212,7 @@ function stopDrawing() {
 
 function draw(e) {
 	if (!drawing) return;
-
+	e.preventDefault();
 	ctx.lineWidth = 5;
 	ctx.lineCap = "round";
 	ctx.strokeStyle = cursorColor;
