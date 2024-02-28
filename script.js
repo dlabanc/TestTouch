@@ -270,13 +270,13 @@ function changeCursorColor(color) {
 }
 
 // Eseménykezelők hozzáadása
-canvas.addEventListener("mousedown", startDrawing);
-canvas.addEventListener("mouseup", stopDrawing);
-canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("pointerdown", startDrawing);
+canvas.addEventListener("pointerup", stopDrawing);
+canvas.addEventListener("pointermove", draw);
 
-canvas.addEventListener('touchstart', startDrawing2);
-canvas.addEventListener('touchend', stopDrawing);
-canvas.addEventListener('touchmove', draw2);
+//canvas.addEventListener('touchstart', startDrawing2);
+//canvas.addEventListener('touchend', stopDrawing);
+//canvas.addEventListener('touchmove', draw2);
     
 
 canvas.addEventListener("contextmenu", event => {
