@@ -17,8 +17,6 @@ canvas {
 	cursor: crosshair;
 	position: absolute;
 	overflow: hidden;
-	width: 99%;
-	height: 77%;
 }
 
 #undoButton,

@@ -190,8 +190,8 @@ document.querySelector(".timer p").addEventListener("click", function () {
 startCountdown();
 
 // Állítsd be a vászon méretét
-//canvas.width = window.innerWidth * 0.95;
-//canvas.height = window.innerHeight * 0.95;
+canvas.width = window.innerWidth * 0.98;
+canvas.height = window.innerHeight * 0.75;
 
 let drawing = false;
 let cursorColor = "#000";
