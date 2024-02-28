@@ -210,7 +210,6 @@ function stopDrawing() {
 
 function draw(e) {
 	if (!drawing) return;
-	e.preventDefault();
 	ctx.lineWidth = 5;
 	ctx.lineCap = "round";
 	ctx.strokeStyle = cursorColor;
