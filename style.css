@@ -9,10 +9,16 @@ body {
 	background-size: 150%;
 }
 
+.canvas {
+	height: max-content;
+}
+
 canvas {
 	cursor: crosshair;
 	position: absolute;
-	left: 50px;
+	overflow: hidden;
+	width: 99%;
+	height: 77%;
 }
 
 #undoButton,
@@ -29,7 +35,7 @@ canvas {
 #clearButton {
 	position: relative;
 	top: 0px;
-	left: 50px;
+	left: 10px;
 	cursor: pointer;
 	user-select: none;
 }
@@ -88,7 +94,7 @@ canvas {
 	margin-top: 0.5rem !important;
 	border-radius: 1rem;
 	margin: auto;
-	width: 95%;
+	width: 99%;
 	height: 100%;
 	max-height: 130px;
 	background-color: rgba(255, 255, 255, 0.881);
@@ -120,7 +126,7 @@ canvas {
 
 .switch {
 	border-radius: 0.5rem;
-	width: 47%;
+	width: 50%;
 	height: 15px;
 	margin: 5px 10px 10px 10px;
 	cursor: pointer;
